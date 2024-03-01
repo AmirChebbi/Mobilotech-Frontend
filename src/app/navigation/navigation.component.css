@@ -1,0 +1,54 @@
+nav {
+  padding-top: 0.5%;
+  padding-bottom: 1%;
+  height: 15%;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 0;
+  border-bottom: 2px solid rgba(5, 5, 80, 0.85);
+  font-size: 1.2vw;
+  font-weight: bold;
+}
+.nav_a {
+  height: 1vi;
+  width: calc(7% - 20px);
+  float: right;
+  display: block;
+  color: rgba(5, 5, 80, 0.85);
+  text-align: center;
+  padding:0.6% 1% 1% 1% ;
+  text-decoration: none;
+}
+.nav_a:hover {
+  background-color: rgba(12, 17, 37, 0.16);
+  border-radius: 0.5vw;
+  transition: 0.4s;
+}
+.nav_a:active{
+  transition: 0.2s;
+  opacity: 0.6;
+}
+
+.login{
+  border: 0.15vi rgba(5, 5, 80, 0.85) solid ;
+  font-size: 1.2vw;
+  height: 0.9vi;
+  width: calc(8% - 20px);
+  background: transparent;
+  border-radius: 0.5vw;
+  float: right;
+  display: block;
+  text-align: center;
+  padding:0.5% 1% 1% 1% ;
+  text-decoration: none;
+  margin-left: 1%;
+  color: rgba(5, 5, 80, 0.85);
+}
+.login:hover{
+  background-color: rgba(76, 77, 82, 0.32);
+  transition: 0.4s;
+}
+.login:active{
+  transition: 0.2s;
+  opacity: 0.6;
+}

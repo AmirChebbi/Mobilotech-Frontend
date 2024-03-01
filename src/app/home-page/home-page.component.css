@@ -1,0 +1,85 @@
+
+.bgImageContainer{
+  display: inline-block;
+  position: relative;
+  background-size: cover;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  padding: 0.5% 0 0;
+  width: 100%;
+  height: inherit;
+  justify-content: center;
+  align-items: center;
+}
+
+.bgImage{
+  height: 75%;
+  width: 95%;
+  margin-left: 2.5%;
+  position: relative;
+  box-sizing: inherit;
+  border-radius: 5px;
+}
+
+.title-name{
+  color: beige;
+  font-size: 4vi;
+  font-weight: 30;
+  margin-bottom: 3%;
+}
+.shop-now-button{
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100%;
+  place-items: center;
+  text-align: center;
+  height: 3vw;
+  width: 12vw;
+  border-radius: 5px;
+  background: linear-gradient(to right,  rgba(195, 205, 229, 0.61), rgba(211, 221, 234, 0.63), rgba(211, 221, 234, 0.63),rgba(211, 221, 234, 0.63),  rgba(195, 205, 229, 0.61)); /* Example gradient from orange to yellow */
+  border: none;
+  font-size:1vw;
+  color: #4f5b7a;
+  cursor: pointer;
+}
+.shop-now-button:active{
+  opacity: 70%;
+}
+
+.CartIcon{
+  display: block;
+  height: 1.5vw;
+  margin-left: 1vb;
+}
+
+.title-slogan-div{
+  position: absolute;
+  top: 27%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  height: auto;
+  width: calc(50% - 20px);
+  display: grid;
+  grid-template-rows: 40% 20% 40%;
+  place-items: center;
+}
+.shop-now-button-div{
+  position: relative;
+  height: 3vw;
+  width: 12vw;
+  border-radius: 5px;
+  background: linear-gradient(to right, rgba(195, 205, 229, 0.61), rgba(211, 221, 234, 0.63), rgba(211, 221, 234, 0.63),rgba(211, 221, 234, 0.63),  rgba(195, 205, 229, 0.61)); /* Example gradient from orange to yellow */
+  border: none;
+  color: #f1f1f1;
+  cursor: pointer;
+}
+.shop-now-button-div :hover{
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.2);
+  opacity: 90%;
+  transition: 0.3s;
+}
+.shop-now-button-div :active{
+  opacity: 60%;
+}

@@ -1,0 +1,109 @@
+
+.product {
+  min-width: 24%;
+  width: 20vi;
+  height: 30vi;
+  background: whitesmoke;
+  margin: 0 1vi 0 0;
+  border-radius: 0.3vi;
+  position: relative;
+  left: 0;
+  transition: 0.5s;
+  box-shadow: 0 0 15px #ccc;
+  overflow: hidden;
+}
+.pic {
+  place-content: center;
+  border-radius: 5%;
+  width: 80%;
+  margin-left: 5%;
+  height: 60%;
+  padding: 5%;
+  /*background: green;*/
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.pic img {
+  position: relative;
+}
+
+.detail,
+.button {
+  width: 90%;
+  /*background: red;*/
+  margin: 5%;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3vi;
+  font-size: 1.1vw;
+  color: #414244;
+}
+
+small {
+  color: #414244;
+}
+
+a {
+  text-decoration: none;
+  padding: 0.4vi 1vi;
+  font-size: 1vw;
+  margin: 1% 0 0 1vb;
+  display: inline-block;
+  background: rgb(24, 25, 48);
+  color: white;
+  border-radius: 4px;
+}
+
+p.star {
+  font-size: 1.5vi;
+  color: #808080;
+}
+
+@media (max-width: 868px) {
+  .product {
+    min-width: 160px;
+    height: 250px;
+    margin: 0 10px 0 0;
+  }
+
+  .detail, .button {
+    font-size: 10px;
+  }
+
+  a {
+    padding: 0.2vi 0.3vi;
+  }
+}
+
+@media (max-width: 500px) {
+  .product {
+    min-width: 140px;
+    min-height: 200px;
+    margin: 0 10px 0 0;
+  }
+}
+.icon-container{
+  position: absolute;
+  top: 5%;
+  right: 7%;
+  height: 1.6vi;
+  width: 1.6vi;
+  border-radius: 60%;
+  overflow: hidden;
+}
+.icon{
+  position: relative;
+  height: 1.65vi;
+  width: 1.6vi;
+  background: rgba(232, 232, 232, 0.41);
+}
+.icon-container:hover{
+  background-color: rgba(79, 91, 122, 0.42);
+  transition: 0.3s;
+}
+.icon:active{
+  background-color: rgba(185, 3, 3, 0.89);
+}

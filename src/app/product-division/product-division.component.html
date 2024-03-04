@@ -1,6 +1,10 @@
+
+
+
 <div class="product">
-  <div class="icon-container">
-    <img src="assets/icons/heart.png" class="icon" >
+  <div (click)="toWishList()" class="icon-container">
+    <img src="assets/icons/heart.png" *ngIf="!inWishList" class="normal-icon" >
+    <img src="assets/icons/heart.png" *ngIf="inWishList" class="red-icon" >
   </div>
   <div class="pic">
     <img src="assets/img/washingMachine.jpg">

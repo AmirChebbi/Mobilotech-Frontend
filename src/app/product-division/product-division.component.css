@@ -1,24 +1,26 @@
 
 .product {
-  min-width: 24%;
-  width: 20vi;
-  height: 30vi;
-  background: whitesmoke;
-  margin: 0 1vi 0 0;
-  border-radius: 0.3vi;
+  aspect-ratio: 18/26;
+  padding-right: 5%;
+  width: 18vi;
+  height: auto;
+  background-color: rgba(39, 58, 98, 0.11);
+  margin: 0 1vi 0 1vi;
+  border-radius: 0.5vi;
   position: relative;
   left: 0;
   transition: 0.5s;
   box-shadow: 0 0 15px #ccc;
   overflow: hidden;
+
 }
 .pic {
   place-content: center;
-  border-radius: 5%;
-  width: 80%;
-  margin-left: 5%;
+  border-radius: 0.5vi;
+  width: 95%;
   height: 60%;
-  padding: 5%;
+  margin-left: 5%;
+  margin-top: 5%;
   /*background: green;*/
   display: flex;
   overflow: hidden;
@@ -30,7 +32,7 @@
 
 .detail,
 .button {
-  width: 90%;
+  width: 95%;
   /*background: red;*/
   margin: 5%;
   padding: 0;
@@ -39,11 +41,11 @@
   align-items: center;
   height: 3vi;
   font-size: 1.1vw;
-  color: #414244;
+  color: #2b2f35;
 }
 
 small {
-  color: #414244;
+  color: #2b2f35;
 }
 
 a {
@@ -52,7 +54,7 @@ a {
   font-size: 1vw;
   margin: 1% 0 0 1vb;
   display: inline-block;
-  background: rgb(24, 25, 48);
+  background: rgb(43, 47, 53);
   color: white;
   border-radius: 4px;
 }
@@ -65,7 +67,6 @@ p.star {
 @media (max-width: 868px) {
   .product {
     min-width: 160px;
-    height: 250px;
     margin: 0 10px 0 0;
   }
 
@@ -80,12 +81,12 @@ p.star {
 
 @media (max-width: 500px) {
   .product {
-    min-width: 140px;
-    min-height: 200px;
+    min-width: 100px;
     margin: 0 10px 0 0;
   }
 }
 .icon-container{
+  z-index: 2;
   position: absolute;
   top: 5%;
   right: 7%;
@@ -93,17 +94,27 @@ p.star {
   width: 1.6vi;
   border-radius: 60%;
   overflow: hidden;
+  border: rgba(72, 90, 133, 0.41) solid 2px;
 }
-.icon{
+.normal-icon{
   position: relative;
   height: 1.65vi;
   width: 1.6vi;
   background: rgba(232, 232, 232, 0.41);
 }
+
+.red-icon{
+  position: relative;
+  height: 1.65vi;
+  width: 1.6vi;
+  background-color: rgba(255, 0, 0, 0.94);
+}
 .icon-container:hover{
-  background-color: rgba(79, 91, 122, 0.42);
+  background-color: rgba(122, 130, 133, 0.26);
   transition: 0.3s;
 }
-.icon:active{
-  background-color: rgba(185, 3, 3, 0.89);
+.icon-container:active{
+  background-color: rgb(176, 0, 0);
+  opacity: 0.6;
+  border-color: rgb(176, 0, 0) ;
 }

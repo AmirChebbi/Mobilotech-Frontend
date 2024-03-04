@@ -12,4 +12,5 @@ import {ProductDivisionComponent} from "../product-division/product-division.com
 })
 export class SlideComponent {
 
+  protected readonly ProductDivisionComponent = ProductDivisionComponent;
 }

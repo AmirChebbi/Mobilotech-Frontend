@@ -69,7 +69,7 @@
         },
         {
           "file": "package.json",
-          "hash": "8116597234414289830",
+          "hash": "6923501145127506279",
           "deps": [
             "npm:@angular/animations",
             "npm:@angular/common",
@@ -172,11 +172,11 @@
         },
         {
           "file": "src/app/home-page/home-page.component.css",
-          "hash": "10202435741918080435"
+          "hash": "16076707933437036280"
         },
         {
           "file": "src/app/home-page/home-page.component.html",
-          "hash": "9278227372623085290"
+          "hash": "13143939926830775582"
         },
         {
           "file": "src/app/home-page/home-page.component.spec.ts",
@@ -309,16 +309,16 @@
           "hash": "4618818081894538454"
         },
         {
-          "file": "src/assets/img/423568506_1514248566100322_6669786738006460976_n.jpg",
-          "hash": "3705027939257702869"
-        },
-        {
           "file": "src/assets/img/Background.jpeg",
           "hash": "4852973675517455657"
         },
         {
           "file": "src/assets/img/Firefly A cosmic AI in a modern robot body, with the picture taken for tha upper part of the body 42.jpg",
           "hash": "17522302518942074818"
+        },
+        {
+          "file": "src/assets/img/Mobilotech.png",
+          "hash": "6310008473371367481"
         },
         {
           "file": "src/assets/img/Spark.png",

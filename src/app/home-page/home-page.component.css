@@ -3,11 +3,9 @@
 @tailwind utilities;
 @tailwind base;
 
-
 .bgImageContainer{
   display: inline-block;
   position: relative;
-  background-size: cover;
   margin: 0;
   font-family: Arial, sans-serif;
   padding: 0 0;
@@ -15,11 +13,12 @@
   height: inherit;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .bgImage{
   margin-top:  3.5rem;
-  height: 75%;
+  height: 100%;
   width: 95%;
   margin-left: 2.5%;
   position: relative;
@@ -97,6 +96,16 @@
 .shop-now-button-div :active{
   opacity: 60%;
 }
+.hidden{
+  display: none;
+  opacity: 0;
+  filter: blur(5px);
+}
+.show{
+  transition: 0.2s;
+  opacity: 1;
+  filter: blur(0px);
+}
 .category-bg{
   padding-bottom: 1.5rem;
   margin-bottom: 3rem;
@@ -108,6 +117,9 @@
   padding-left: 1rem;
   padding-right: 1rem;
   max-width: 80rem;
+  transition: 0.2s;
+  opacity: 1;
+  filter: blur(0px);
 }
 
 .category-l3{
@@ -130,21 +142,23 @@
 }
 
 .about-img{
+  max-width: 304.8px;
+  max-height: 304.8px;
   margin-top: 5%;
-  height: 266.8px;
-  width: 266.8px;
   border-radius: 0.75rem;
-  max-width: none;
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  height: 42vi;
+  width: 42vi;
 }
-
 .about-img-2{
-  height: 550px;
-  width: 550px;
+  max-height: 626.5px;
+  max-width: 626.5px;
+  height: 89vi;
+  width: 89vi;
   border-radius: 0.75rem;
-  max-width: none;
   box-shadow: 0 20px 25px 5px rgba(0, 0, 0, 0.1), 0 10px 10px 5px rgba(0, 0, 0, 0.04);
 }
+
 
 @media (min-width: 640px) {
   .category-div{
@@ -162,9 +176,28 @@
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
+
 }
 
 @media (min-width: 1024px) {
+
+  .about-img{
+    height: 17vi;
+    width:  17vi;
+    max-width: 280px;
+    max-height: 280px;
+    min-width: 230px;
+    min-height: 230px;
+  }
+
+  .about-img-2{
+    max-height: 560px;
+    max-width: 560px;
+    min-height: 480px;
+    min-width: 480px;
+    height: 34vi;
+    width: 34vi;
+  }
 
   .about-img-container {
     height: 480px;
@@ -179,6 +212,7 @@
     column-gap: 1.5rem;
   }
   .category-l2{
+    left: 50%;
     padding-left: 2rem;
     padding-right: 2rem;
   }

@@ -1,0 +1,7 @@
+@tailwind components;
+@tailwind utilities;
+@tailwind base;
+
+.limit{
+  border: rgba(49, 49, 75, 0.94) solid 4px ;
+}

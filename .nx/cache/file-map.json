@@ -117,7 +117,7 @@
         },
         {
           "file": "src/app/app.component.ts",
-          "hash": "2583450507272387633",
+          "hash": "11595965702903008764",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/router",
@@ -143,9 +143,54 @@
         },
         {
           "file": "src/app/app.routes.ts",
-          "hash": "7118345131050127598",
+          "hash": "13585543547915586903",
           "deps": [
             "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "src/app/authentication-page/authentication-page.component.css",
+          "hash": "12466625928071680555"
+        },
+        {
+          "file": "src/app/authentication-page/authentication-page.component.html",
+          "hash": "7819412435047050316"
+        },
+        {
+          "file": "src/app/authentication-page/authentication-page.component.spec.ts",
+          "hash": "8763962524487694521",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/authentication-page/authentication-page.component.ts",
+          "hash": "9969914724030239740",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "src/app/category-overview/category-overview.component.css",
+          "hash": "10475155308848716041"
+        },
+        {
+          "file": "src/app/category-overview/category-overview.component.html",
+          "hash": "11556838751526217136"
+        },
+        {
+          "file": "src/app/category-overview/category-overview.component.spec.ts",
+          "hash": "2590035813002046828",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/category-overview/category-overview.component.ts",
+          "hash": "1715361495473712497",
+          "deps": [
+            "npm:@angular/core"
           ]
         },
         {
@@ -154,7 +199,7 @@
         },
         {
           "file": "src/app/category/category.component.html",
-          "hash": "11564580984665679519"
+          "hash": "6167338596470778084"
         },
         {
           "file": "src/app/category/category.component.spec.ts",
@@ -171,12 +216,56 @@
           ]
         },
         {
+          "file": "src/app/contact-page/contact-page.component.css",
+          "hash": "13854213540147019046"
+        },
+        {
+          "file": "src/app/contact-page/contact-page.component.html",
+          "hash": "14118377578643469221"
+        },
+        {
+          "file": "src/app/contact-page/contact-page.component.spec.ts",
+          "hash": "12955098878397406735",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/contact-page/contact-page.component.ts",
+          "hash": "826542083032543305",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/footer/footer.component.css",
+          "hash": "11126752332646708346"
+        },
+        {
+          "file": "src/app/footer/footer.component.html",
+          "hash": "1309652323344121480"
+        },
+        {
+          "file": "src/app/footer/footer.component.spec.ts",
+          "hash": "17110653851772412011",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/footer/footer.component.ts",
+          "hash": "4583625294760896775",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
           "file": "src/app/home-page/home-page.component.css",
-          "hash": "16076707933437036280"
+          "hash": "15684648017488730733"
         },
         {
           "file": "src/app/home-page/home-page.component.html",
-          "hash": "13143939926830775582"
+          "hash": "11266819477651221018"
         },
         {
           "file": "src/app/home-page/home-page.component.spec.ts",
@@ -187,19 +276,43 @@
         },
         {
           "file": "src/app/home-page/home-page.component.ts",
-          "hash": "11520102398664213230",
+          "hash": "4734823757591136782",
           "deps": [
             "npm:@angular/core",
-            "npm:@angular/router"
+            "npm:@angular/router",
+            "npm:rxjs",
+            "npm:@angular/animations"
+          ]
+        },
+        {
+          "file": "src/app/login-page/login-page.component.css",
+          "hash": "680160502502134272"
+        },
+        {
+          "file": "src/app/login-page/login-page.component.html",
+          "hash": "402907507747311139"
+        },
+        {
+          "file": "src/app/login-page/login-page.component.spec.ts",
+          "hash": "15610066339507070736",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/login-page/login-page.component.ts",
+          "hash": "1120634045147028464",
+          "deps": [
+            "npm:@angular/core"
           ]
         },
         {
           "file": "src/app/menu/menu.component.css",
-          "hash": "5190834107482270291"
+          "hash": "14939904512050964625"
         },
         {
           "file": "src/app/menu/menu.component.html",
-          "hash": "7577034660295574011"
+          "hash": "853895155593606004"
         },
         {
           "file": "src/app/menu/menu.component.spec.ts",
@@ -221,7 +334,7 @@
         },
         {
           "file": "src/app/navigation/navigation.component.html",
-          "hash": "2630070790592689142"
+          "hash": "2300227950279879559"
         },
         {
           "file": "src/app/navigation/navigation.component.spec.ts",
@@ -240,8 +353,30 @@
           ]
         },
         {
+          "file": "src/app/page-not-found/page-not-found.component.css",
+          "hash": "5841255359909561786"
+        },
+        {
+          "file": "src/app/page-not-found/page-not-found.component.html",
+          "hash": "15406520915935262976"
+        },
+        {
+          "file": "src/app/page-not-found/page-not-found.component.spec.ts",
+          "hash": "8591569498989142826",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/page-not-found/page-not-found.component.ts",
+          "hash": "10195247231366241956",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
           "file": "src/app/product-division/product-division.component.css",
-          "hash": "2821493219490463392"
+          "hash": "10242020118747377036"
         },
         {
           "file": "src/app/product-division/product-division.component.html",
@@ -260,6 +395,50 @@
           "deps": [
             "npm:@angular/core",
             "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "src/app/products-listing/products-listing.component.css",
+          "hash": "5011994584198429629"
+        },
+        {
+          "file": "src/app/products-listing/products-listing.component.html",
+          "hash": "18297206608695902544"
+        },
+        {
+          "file": "src/app/products-listing/products-listing.component.spec.ts",
+          "hash": "6072313794649554880",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/products-listing/products-listing.component.ts",
+          "hash": "1550715088533366305",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/signup-page/signup-page.component.css",
+          "hash": "13517673735284370524"
+        },
+        {
+          "file": "src/app/signup-page/signup-page.component.html",
+          "hash": "1042903932902498108"
+        },
+        {
+          "file": "src/app/signup-page/signup-page.component.spec.ts",
+          "hash": "15354474616526700364",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/signup-page/signup-page.component.ts",
+          "hash": "3320795394705235018",
+          "deps": [
+            "npm:@angular/core"
           ]
         },
         {
@@ -325,6 +504,14 @@
           "hash": "10202813365320929109"
         },
         {
+          "file": "src/assets/img/artboard.png",
+          "hash": "14093081277792972458"
+        },
+        {
+          "file": "src/assets/img/artboarddark.png",
+          "hash": "14841448753931711984"
+        },
+        {
           "file": "src/assets/img/favicon.ico",
           "hash": "3988961587069885523"
         },
@@ -358,14 +545,14 @@
         },
         {
           "file": "src/main.ts",
-          "hash": "4169901790405087765",
+          "hash": "10210043893670329446",
           "deps": [
             "npm:@angular/platform-browser"
           ]
         },
         {
           "file": "src/styles.css",
-          "hash": "1737935087679424200"
+          "hash": "8116173165235758226"
         },
         {
           "file": "tailwind.config.js",

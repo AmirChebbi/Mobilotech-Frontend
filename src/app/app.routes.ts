@@ -4,6 +4,8 @@ import {PageNotFoundComponent} from "./page-not-found/page-not-found.component";
 import {ContactPageComponent} from "./contact-page/contact-page.component";
 import {LoginPageComponent} from "./login-page/login-page.component";
 import {AuthenticationPageComponent} from "./authentication-page/authentication-page.component";
+import {CategoryOverviewComponent} from "./category-overview/category-overview.component";
+import {ProductsListingComponent} from "./products-listing/products-listing.component";
 
 const routes: Routes = [
   {
@@ -18,6 +20,14 @@ const routes: Routes = [
   {
     path: 'contact',
     component: ContactPageComponent,
+  },
+  {
+    path: 'categories',
+    component: CategoryOverviewComponent
+  },
+  {
+    path:'products',
+    component: ProductsListingComponent
   },
   {
     path: '**',

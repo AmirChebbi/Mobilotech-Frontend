@@ -5,11 +5,14 @@ import {CategoryComponent} from "../category/category.component";
 import {elementAt} from "rxjs";
 import {animate, state, style, transition, trigger} from "@angular/animations";
 import {FooterComponent} from "../footer/footer.component";
+import {ProductService} from "../product.service";
+import {NgIf} from "@angular/common";
+import {ProductQuickviewComponent} from "../product-quickview/product-quickview.component";
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
-  imports: [RouterModule, RouterLink, RouterOutlet, SlideComponent, CategoryComponent, FooterComponent],
+  imports: [RouterModule, RouterLink, RouterOutlet, SlideComponent, CategoryComponent, FooterComponent, NgIf, ProductQuickviewComponent],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.css',
   animations: [
@@ -50,5 +53,9 @@ export class HomePageComponent {
   hiddenCategory:any = document.getElementsByClassName('category-l2');
 
   hiddenElements:any = document.querySelectorAll('.hidden').forEach((element) => this.observer.observe(element))
+
+  constructor(public productService : ProductService) {}
+
+
 
 }

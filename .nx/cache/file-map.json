@@ -117,7 +117,7 @@
         },
         {
           "file": "src/app/app.component.ts",
-          "hash": "11595965702903008764",
+          "hash": "12617221901498152948",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/router",
@@ -143,14 +143,14 @@
         },
         {
           "file": "src/app/app.routes.ts",
-          "hash": "13585543547915586903",
+          "hash": "6605474896965860161",
           "deps": [
             "npm:@angular/router"
           ]
         },
         {
           "file": "src/app/authentication-page/authentication-page.component.css",
-          "hash": "12466625928071680555"
+          "hash": "12999063588694076745"
         },
         {
           "file": "src/app/authentication-page/authentication-page.component.html",
@@ -221,7 +221,7 @@
         },
         {
           "file": "src/app/contact-page/contact-page.component.html",
-          "hash": "14118377578643469221"
+          "hash": "12868825717905650182"
         },
         {
           "file": "src/app/contact-page/contact-page.component.spec.ts",
@@ -261,11 +261,11 @@
         },
         {
           "file": "src/app/home-page/home-page.component.css",
-          "hash": "15684648017488730733"
+          "hash": "4028599413461187165"
         },
         {
           "file": "src/app/home-page/home-page.component.html",
-          "hash": "11266819477651221018"
+          "hash": "17092933906883036989"
         },
         {
           "file": "src/app/home-page/home-page.component.spec.ts",
@@ -276,12 +276,13 @@
         },
         {
           "file": "src/app/home-page/home-page.component.ts",
-          "hash": "4734823757591136782",
+          "hash": "6187641803525463540",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/router",
             "npm:rxjs",
-            "npm:@angular/animations"
+            "npm:@angular/animations",
+            "npm:@angular/common"
           ]
         },
         {
@@ -290,7 +291,7 @@
         },
         {
           "file": "src/app/login-page/login-page.component.html",
-          "hash": "402907507747311139"
+          "hash": "18282127927431533600"
         },
         {
           "file": "src/app/login-page/login-page.component.spec.ts",
@@ -312,7 +313,7 @@
         },
         {
           "file": "src/app/menu/menu.component.html",
-          "hash": "853895155593606004"
+          "hash": "12718998251308035121"
         },
         {
           "file": "src/app/menu/menu.component.spec.ts",
@@ -375,12 +376,34 @@
           ]
         },
         {
+          "file": "src/app/product-description/product-description.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/product-description/product-description.component.html",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/product-description/product-description.component.spec.ts",
+          "hash": "4907789596381575493",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/product-description/product-description.component.ts",
+          "hash": "3109467474007162227",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
           "file": "src/app/product-division/product-division.component.css",
-          "hash": "10242020118747377036"
+          "hash": "2328184261223235226"
         },
         {
           "file": "src/app/product-division/product-division.component.html",
-          "hash": "13246150706196867657"
+          "hash": "13189125449624029053"
         },
         {
           "file": "src/app/product-division/product-division.component.spec.ts",
@@ -391,19 +414,55 @@
         },
         {
           "file": "src/app/product-division/product-division.component.ts",
-          "hash": "9851139052080221136",
+          "hash": "2961387558971236804",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/common"
           ]
         },
         {
+          "file": "src/app/product-quickview/product-quickview.component.css",
+          "hash": "5841255359909561786"
+        },
+        {
+          "file": "src/app/product-quickview/product-quickview.component.html",
+          "hash": "12089594844123722378"
+        },
+        {
+          "file": "src/app/product-quickview/product-quickview.component.spec.ts",
+          "hash": "12216305817800816206",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/product-quickview/product-quickview.component.ts",
+          "hash": "13314209830799096766",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/product.service.spec.ts",
+          "hash": "8525954443037341197",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/product.service.ts",
+          "hash": "11581198159587676589",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
           "file": "src/app/products-listing/products-listing.component.css",
-          "hash": "5011994584198429629"
+          "hash": "6460502586450756209"
         },
         {
           "file": "src/app/products-listing/products-listing.component.html",
-          "hash": "18297206608695902544"
+          "hash": "9908154278527223330"
         },
         {
           "file": "src/app/products-listing/products-listing.component.spec.ts",
@@ -414,9 +473,10 @@
         },
         {
           "file": "src/app/products-listing/products-listing.component.ts",
-          "hash": "1550715088533366305",
+          "hash": "2158430918255828857",
           "deps": [
-            "npm:@angular/core"
+            "npm:@angular/core",
+            "npm:@angular/common"
           ]
         },
         {
@@ -425,7 +485,7 @@
         },
         {
           "file": "src/app/signup-page/signup-page.component.html",
-          "hash": "1042903932902498108"
+          "hash": "2433453139783187984"
         },
         {
           "file": "src/app/signup-page/signup-page.component.spec.ts",
@@ -443,11 +503,11 @@
         },
         {
           "file": "src/app/slide/slide.component.css",
-          "hash": "9950018613917800152"
+          "hash": "7498699150963286739"
         },
         {
           "file": "src/app/slide/slide.component.html",
-          "hash": "9024366720497433522"
+          "hash": "7822769652020757601"
         },
         {
           "file": "src/app/slide/slide.component.spec.ts",
@@ -458,9 +518,10 @@
         },
         {
           "file": "src/app/slide/slide.component.ts",
-          "hash": "7487245252129212789",
+          "hash": "10848556456723222801",
           "deps": [
-            "npm:@angular/core"
+            "npm:@angular/core",
+            "npm:@angular/common"
           ]
         },
         {
@@ -541,7 +602,7 @@
         },
         {
           "file": "src/index.html",
-          "hash": "16889873458538016061"
+          "hash": "9329084690907564171"
         },
         {
           "file": "src/main.ts",

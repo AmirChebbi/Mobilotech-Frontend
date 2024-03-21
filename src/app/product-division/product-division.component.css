@@ -1,5 +1,7 @@
 
+
 .product {
+  max-width: 450px;
   aspect-ratio: 18/26;
   padding-right: 5%;
   width: 18vi;
@@ -23,13 +25,18 @@
   height: 60%;
   margin-left: 5%;
   margin-top: 5%;
-  /*background: green;*/
   display: flex;
   overflow: hidden;
   margin-bottom: 20px;
 }
 .pic img {
   position: relative;
+}
+
+.pic :hover{
+  opacity: 0.8;
+  transition: 0.1s;
+  cursor: pointer;
 }
 
 .detail,
@@ -68,7 +75,7 @@ p.star {
 
 @media (max-width: 1024px) {
   .product {
-    min-width: 160px;
+    min-width: 200px;
     margin: 0 10px 0 0;
   }
 
@@ -82,34 +89,39 @@ p.star {
 }
 
 
-@media (max-width: 640px) {
+@media (max-width: 470px) {
   .product {
-    min-width: 100px;
+    min-width: 160px;
     margin: 0 10px 0 0;
   }
 }
+
+
 .icon-container{
   z-index: 2;
   position: absolute;
   top: 5%;
   right: 7%;
   height: 1.6vi;
-  width: 1.6vi;
+  aspect-ratio: 1/1;
   border-radius: 60%;
   overflow: hidden;
   border: rgba(72, 90, 133, 0.41) solid 2px;
+  min-height: 15px;
 }
 .normal-icon{
   position: relative;
   height: 1.65vi;
-  width: 1.6vi;
+  aspect-ratio: 1.6/1.65;
+  min-height: 15px;
   background: rgba(232, 232, 232, 0.41);
 }
 
 .red-icon{
   position: relative;
   height: 1.65vi;
-  width: 1.6vi;
+  aspect-ratio: 1.6/1.65;
+  min-height: 15px;
   background-color: rgba(255, 0, 0, 0.94);
 }
 .icon-container:hover{
@@ -121,3 +133,6 @@ p.star {
   opacity: 0.6;
   border-color: rgb(176, 0, 0) ;
 }
+
+
+

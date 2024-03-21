@@ -1,7 +1,9 @@
 <main>
 
   <div class="bgImageContainer">
-    <img src='https://ifdalivestorage.blob.core.windows.net/user-uploads/784446/347690/00000000-0000-0000-0000-000000000000/01_main_entry_img.jpg' class="bgImage" style="height: 43vi" alt="">
+    <div class="bgImage">
+      <img src='https://ifdalivestorage.blob.core.windows.net/user-uploads/784446/347690/00000000-0000-0000-0000-000000000000/01_main_entry_img.jpg'   alt="">
+    </div>
       <div class="title-slogan-div">
         <h1 class="title-name">Mobilotech</h1>
         <h3 class="slogan">Welcome to your new Electronics and Furniture Supplier</h3>
@@ -63,20 +65,8 @@
 
   <!-- Category preview ---------------------------------------------------------------------------------------->
   <div style="display: grid; place-content: center; width: 100%; background-color: rgba(39, 58, 98, 0.11);" >
-    <!--
-  This example requires some changes to your config:
 
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/aspect-ratio'),
-    ],
-  }
-  ```
--->
+
     <div class="category-bg ">
       <div [@slideInOut]="isVisible" class="category-l2">
         <div class="category-l3">
@@ -155,4 +145,8 @@
     </div>
   </div>
 </main>
+
+<div *ngIf="this.productService.getIsQuickViewd" class="quickView-container" >
+  <app-product-quickview ></app-product-quickview>
+</div>
 <app-footer></app-footer>

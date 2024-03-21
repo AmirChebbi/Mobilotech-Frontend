@@ -1,4 +1,9 @@
 
+.slide-div{
+  display: grid;
+  gap: 5px;
+  grid-template-rows: 50px ;
+}
 
 .slide-div h2{
   color: rgb(43, 47, 53);
@@ -35,19 +40,30 @@ span:hover {
 }
 
 section {
+  position: relative;
   width: 97.5%;
   height: 30vi;
-  min-height:260px ;
+  min-height:300px ;
   border-radius: 5px;
   /*background: red;*/
   margin: auto;
   display: flex;
+  gap: 5px;
   align-items: center;
   overflow-x: auto;
 }
 
 section::-webkit-scrollbar {
   display: none;
+}
+
+@media (max-width: 470px) {
+  .grayda{
+    min-height: 240px;
+  }
+  section {
+    min-height: 240px;
+  }
 }
 
 

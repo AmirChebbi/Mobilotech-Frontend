@@ -1,13 +1,12 @@
 
 
-
-<div class="product">
-  <div (click)="toWishList()" class="icon-container">
+<div class="product" [style.translate.%]="leftPosition" >
+  <div (click)="toWishList()" class="icon-container" >
     <img src="assets/icons/heart.png" *ngIf="!inWishList" class="normal-icon" >
     <img src="assets/icons/heart.png" *ngIf="inWishList" class="red-icon" >
   </div>
   <div class="pic">
-    <img src="assets/img/washingMachine.jpg">
+    <img src="assets/img/washingMachine.jpg" (click)="this.productService.setIsQuickViewd(true)">
   </div>
   <div class="detail">
     <p>
@@ -17,13 +16,10 @@
     <samp>$45.00</samp>
   </div>
   <div class="button">
-    <p class="star">
-      <strong>★</strong>
-      <strong>★</strong>
-      <strong>★</strong>
-      <strong>☆</strong>
-      <strong>☆</strong>
-    </p>
+    <a class="star" href="/description" style="border: none; background-color: transparent; color: #111827; font-weight: bold "> Learn More</a>
     <a href="#">Add-cart</a>
   </div>
+
 </div>
+
+

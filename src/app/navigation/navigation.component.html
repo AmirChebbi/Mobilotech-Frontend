@@ -10,13 +10,13 @@
 
 
     <div class="flex lg:hidden">
-      <button (click)="clicked=true" type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+      <button (click)="sideBarOut=true" type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
         <span class="sr-only">Open main menu</span>
         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
       </button>
-      <div *ngIf="clicked" [@slideInOut]="clicked ? 'in' : 'out'" id="sideBar" class="lg:show z-20" role="dialog" aria-modal="true">
+      <div *ngIf="sideBarOut" [@slideInOut]="clicked ? 'in' : 'out'" id="sideBar" class="lg:show z-20" role="dialog" aria-modal="true">
         <!-- Background backdrop, show/hide based on slide-over state. -->
         <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div class="flex items-center justify-between">
@@ -24,7 +24,7 @@
               <span class="sr-only">Your Company</span>
               <img class="h-8 w-auto" src="assets/img/logo3.png" alt="">
             </a>
-            <button (click)="clicked=false" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700 z-30">
+            <button (click)="sideBarOut=false" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700 z-30">
               <span class="sr-only">Close menu</span>
               <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -34,8 +34,31 @@
           <div class="mt-6 flow-root">
             <div class="-my-6 divide-y divide-gray-500/10">
               <div class="space-y-2 py-6">
+                <div *ngIf="productService.isAuthenticated" class="-mx-3">
+                  <button (click)="isdown=!isdown" type="button" class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50" aria-controls="disclosure-1" aria-expanded="false">
+                    Your Account
+                    <!--
+                      Expand/collapse icon, toggle classes based on menu open state.
+
+                      Open: "rotate-180", Closed: ""
+                    -->
+                    <svg class="h-5 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                    </svg>
+                  </button>
+                  <!-- 'Product' sub-menu, show/hide based on menu state. -->
+                  <div *ngIf="isdown" class="mt-2 space-y-2" id="disclosure-1">
+                    <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Your Profile</a>
+                    <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Settings</a>
+                    <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Shopping Cart</a>
+                    <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Wish List</a>
+                  </div>
+                </div>
+
+
+
                 <div class="-mx-3">
-                  <button type="button" class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50" aria-controls="disclosure-1" aria-expanded="false">
+                  <button (click)="clicked=!clicked" type="button" class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50" aria-controls="disclosure-1" aria-expanded="false">
                     Product
                     <!--
                       Expand/collapse icon, toggle classes based on menu open state.
@@ -47,7 +70,7 @@
                     </svg>
                   </button>
                   <!-- 'Product' sub-menu, show/hide based on menu state. -->
-                  <div class="mt-2 space-y-2" id="disclosure-1">
+                  <div *ngIf="clicked" class="mt-2 space-y-2" id="disclosure-2">
                     <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Analytics</a>
                     <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Engagement</a>
                     <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Security</a>
@@ -62,7 +85,8 @@
                 <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Company</a>
               </div>
               <div class="py-6">
-                <a href="/authentication" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log in</a>
+                <a *ngIf="productService.isAuthenticated" href="/authentication" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log out</a>
+                <a *ngIf="!productService.isAuthenticated" href="/authentication" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log in</a>
               </div>
             </div>
           </div>
@@ -80,16 +104,6 @@
         </button>
 
         <app-menu *ngIf="clicked"></app-menu>
-        <!--
-          'Product' flyout menu, show/hide based on flyout menu state.
-
-          Entering: "transition ease-out duration-200"
-            From: "opacity-0 translate-y-1"
-            To: "opacity-100 translate-y-0"
-          Leaving: "transition ease-in duration-150"
-            From: "opacity-100 translate-y-0"
-            To: "opacity-0 translate-y-1"
-        -->
 
       </div>
       <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Features</a>
@@ -97,13 +111,39 @@
       <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Company</a>
     </div>
     <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-      <a href="/authentication" class="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
+      <a *ngIf="!productService.isAuthenticated" href="/authentication" class="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
+
+
+      <div *ngIf="productService.isAuthenticated" class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+        <!-- Profile dropdown -->
+        <div class="relative ml-3">
+          <div>
+            <button (click)="isdown=!isdown" type="button" class="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+              <span class="absolute -inset-1.5"></span>
+              <span class="sr-only">Open user menu</span>
+              <img class="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+            </button>
+          </div>
+
+          <div *ngIf="isdown" class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
+            <!-- Active: "bg-gray-100", Not Active: "" -->
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Your Profile</a>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-1">Settings</a>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-2">Sign out</a>
+          </div>
+
+
+
+        </div>
+      </div>
+
+
+
     </div>
   </nav>
 
 
 
-  <!-- Mobile menu, show/hide based on menu open state. -->
 
 </div>
 

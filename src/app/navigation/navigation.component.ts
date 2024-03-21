@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {MenuComponent} from "../menu/menu.component";
 import {NgIf} from "@angular/common";
 import { trigger, state, style, animate, transition } from '@angular/animations';
+import {ProductService} from "../product.service";
 
 @Component({
   selector: 'app-navigation',
@@ -30,6 +31,12 @@ export class NavigationComponent {
   clicked: boolean =false;
   sidebar = document.querySelectorAll('.global-hidden');
 
+  isdown:boolean=false;
+
+  sideBarOut:boolean=false;
+
+  constructor(public productService : ProductService) {
+  }
   changeState(){
     this.clicked=!this.clicked;
   }

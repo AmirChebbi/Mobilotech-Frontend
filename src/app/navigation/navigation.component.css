@@ -175,3 +175,23 @@ header nav {
     padding-right: 2rem;
   }
 }
+
+
+.icon-container{
+  display: grid;
+  place-content: center;
+  z-index: 2;
+  position: relative;
+  top: 5%;
+  right: 7%;
+  height: 1.6vi;
+  aspect-ratio: 1/1;
+  border-radius: 60%;
+  overflow: hidden;
+  min-height: 15px;
+}
+
+.icon-container :hover{
+  opacity: 0.7;
+  cursor: pointer;
+}

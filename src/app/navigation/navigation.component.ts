@@ -3,6 +3,8 @@ import {MenuComponent} from "../menu/menu.component";
 import {NgIf} from "@angular/common";
 import { trigger, state, style, animate, transition } from '@angular/animations';
 import {ProductService} from "../product.service";
+import {SideShoppingCartComponent} from "../side-shopping-cart/side-shopping-cart.component";
+import {SideWishlistComponent} from "../side-wishlist/side-wishlist.component";
 
 @Component({
   selector: 'app-navigation',
@@ -10,6 +12,8 @@ import {ProductService} from "../product.service";
   imports: [
     MenuComponent,
     NgIf,
+    SideShoppingCartComponent,
+    SideWishlistComponent,
   ],
   templateUrl: './navigation.component.html',
   styleUrl: './navigation.component.css',
@@ -40,4 +44,5 @@ export class NavigationComponent {
   changeState(){
     this.clicked=!this.clicked;
   }
+
 }

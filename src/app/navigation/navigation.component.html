@@ -107,7 +107,7 @@
 
       </div>
       <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Features</a>
-      <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Marketplace</a>
+      <a href="/products" class="text-sm font-semibold leading-6 text-gray-900">Marketplace</a>
       <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Company</a>
     </div>
     <div class="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -115,6 +115,14 @@
 
 
       <div *ngIf="productService.isAuthenticated" class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+
+        <div class="icon-container" style="margin-right: 15px">
+          <img (click)="productService.setSideShoppingCart(true)" src="assets/icons/shopping-cart.svg" style="width: 22px; margin: 5px">
+        </div>
+
+        <div class="icon-container">
+          <img (click)="productService.setSideWishList(true)" src="assets/icons/heart.svg.png" style="width: 60px;">
+        </div>
         <!-- Profile dropdown -->
         <div class="relative ml-3">
           <div>
@@ -148,3 +156,6 @@
 </div>
 
 </header>
+
+<app-side-shopping-cart *ngIf="productService.sideShoppingCart"> </app-side-shopping-cart>
+<app-side-wishlist *ngIf="productService.sideWishList"></app-side-wishlist>

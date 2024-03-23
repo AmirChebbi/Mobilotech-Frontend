@@ -6,6 +6,7 @@ import {AuthenticationPageComponent} from "./authentication-page/authentication-
 import {CategoryOverviewComponent} from "./category-overview/category-overview.component";
 import {ProductsListingComponent} from "./products-listing/products-listing.component";
 import {ProductDescriptionComponent} from "./product-description/product-description.component";
+import {ShoppingCartPageComponent} from "./shopping-cart-page/shopping-cart-page.component";
 
 const routes: Routes = [
   {
@@ -32,6 +33,10 @@ const routes: Routes = [
   {
     path:'products',
     component: ProductsListingComponent
+  },
+  {
+    path:'cart',
+    component:ShoppingCartPageComponent
   },
   {
     path: '**',

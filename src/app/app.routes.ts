@@ -7,6 +7,8 @@ import {CategoryOverviewComponent} from "./category-overview/category-overview.c
 import {ProductsListingComponent} from "./products-listing/products-listing.component";
 import {ProductDescriptionComponent} from "./product-description/product-description.component";
 import {ShoppingCartPageComponent} from "./shopping-cart-page/shopping-cart-page.component";
+import {LoginPageComponent} from "./login-page/login-page.component";
+import {SignupPageComponent} from "./signup-page/signup-page.component";
 
 const routes: Routes = [
   {

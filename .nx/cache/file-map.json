@@ -135,15 +135,17 @@
         },
         {
           "file": "src/app/app.module.ts",
-          "hash": "14327854917441114860",
+          "hash": "17928931054093708645",
           "deps": [
             "npm:@angular/core",
-            "npm:@angular/platform-browser"
+            "npm:@angular/platform-browser",
+            "npm:@angular/common",
+            "npm:http"
           ]
         },
         {
           "file": "src/app/app.routes.ts",
-          "hash": "7877754129478747258",
+          "hash": "14639515042170473485",
           "deps": [
             "npm:@angular/router"
           ]
@@ -154,7 +156,7 @@
         },
         {
           "file": "src/app/authentication-page/authentication-page.component.html",
-          "hash": "7819412435047050316"
+          "hash": "17430159682043219888"
         },
         {
           "file": "src/app/authentication-page/authentication-page.component.spec.ts",
@@ -165,7 +167,7 @@
         },
         {
           "file": "src/app/authentication-page/authentication-page.component.ts",
-          "hash": "9969914724030239740",
+          "hash": "18300360570008499256",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/common"
@@ -286,12 +288,27 @@
           ]
         },
         {
+          "file": "src/app/jwt.service.spec.ts",
+          "hash": "11269666515341524758",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/jwt.service.ts",
+          "hash": "4643880912236230905",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
           "file": "src/app/login-page/login-page.component.css",
           "hash": "680160502502134272"
         },
         {
           "file": "src/app/login-page/login-page.component.html",
-          "hash": "18282127927431533600"
+          "hash": "3568531825839183307"
         },
         {
           "file": "src/app/login-page/login-page.component.spec.ts",
@@ -302,9 +319,10 @@
         },
         {
           "file": "src/app/login-page/login-page.component.ts",
-          "hash": "1120634045147028464",
+          "hash": "3933661685098586884",
           "deps": [
-            "npm:@angular/core"
+            "npm:@angular/core",
+            "npm:@angular/forms"
           ]
         },
         {
@@ -451,7 +469,7 @@
         },
         {
           "file": "src/app/product.service.ts",
-          "hash": "8595852242030359555",
+          "hash": "8859174206497196744",
           "deps": [
             "npm:@angular/core"
           ]
@@ -485,7 +503,7 @@
         },
         {
           "file": "src/app/shopping-cart-page/shopping-cart-page.component.html",
-          "hash": "16211250288786805155"
+          "hash": "13100024156838426564"
         },
         {
           "file": "src/app/shopping-cart-page/shopping-cart-page.component.spec.ts",

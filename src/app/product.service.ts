@@ -9,7 +9,7 @@ export class ProductService {
 
   private _isQuickViewd: boolean = false;
 
-  private _isAuthenticated:boolean =true;
+  private _isAuthenticated:boolean =false;
 
   get isAuthenticated(): boolean {
     return this._isAuthenticated;

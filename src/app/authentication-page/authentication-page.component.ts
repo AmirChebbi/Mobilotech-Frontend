@@ -17,7 +17,4 @@ import {NgIf} from "@angular/common";
 export class AuthenticationPageComponent {
   login:boolean = true;
 
-  changeFunction(){
-    this.login= !this.login;
-  }
 }

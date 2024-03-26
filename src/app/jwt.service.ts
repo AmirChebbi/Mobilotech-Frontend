@@ -11,4 +11,8 @@ export class JwtService {
   public generateToken(request: string){
     return this.http.post("http://localhost:8080/api/v1/auth/login",request,{responseType: "text" as "json"})
   }
+
+  public sendSignUpRequest(request: string){
+    return this.http.post("http://localhost:8080/api/v1/auth/signup",request,{responseType: "text" as "json"})
+  }
 }

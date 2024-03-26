@@ -1,28 +1,30 @@
-import {Component, inject} from '@angular/core';
-import {FormControl, FormGroup, ReactiveFormsModule} from "@angular/forms";
+import {ChangeDetectorRef, Component, inject, OnInit} from '@angular/core';
+import {FormControl, FormGroup, ReactiveFormsModule, Validators} from "@angular/forms";
 import {JwtService} from "../jwt.service";
 
 @Component({
   selector: 'app-login-page',
-  standalone: true,
-  imports: [
-    ReactiveFormsModule
-  ],
   templateUrl: './login-page.component.html',
   styleUrl: './login-page.component.css'
 })
-export class LoginPageComponent {
-  constructor(private jwtService:JwtService) {
+export class LoginPageComponent implements OnInit{
+  constructor(private cdr: ChangeDetectorRef, private jwtService: JwtService) {
   }
-  loginForm= new FormGroup({
-    email: new FormControl(''),
-    password: new FormControl('')
-  })
+
+  ngOnInit(): void {
+    this.loginForm.reset(); // supposed to empty the form on page load
+    this.login();
+  }
+
+  loginForm = new FormGroup({
+    email: new FormControl('', Validators.required),
+    password: new FormControl('', Validators.required)
+  });
 
 
 
   login(){
-    let loginData = {
+    const loginData = {
       email: this.loginForm.get('email')?.value,
       password: this.loginForm.get('password')?.value
     }

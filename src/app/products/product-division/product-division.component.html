@@ -2,11 +2,11 @@
 
 <div class="product" [style.translate.%]="leftPosition" >
   <div (click)="toWishList()" class="icon-container" >
-    <img src="assets/icons/heart.png" *ngIf="!inWishList" class="normal-icon" >
-    <img src="assets/icons/heart.png" *ngIf="inWishList" class="red-icon" >
+    <img src="../../../assets/icons/heart.png" *ngIf="!inWishList" class="normal-icon" >
+    <img src="../../../assets/icons/heart.png" *ngIf="inWishList" class="red-icon" >
   </div>
   <div class="pic">
-    <img src="assets/img/washingMachine.jpg" (click)="this.productService.setIsQuickViewd(true)">
+    <img src="../../../assets/img/washingMachine.jpg" (click)="this.productService.setIsQuickViewd(true)">
   </div>
   <div class="detail">
     <p>

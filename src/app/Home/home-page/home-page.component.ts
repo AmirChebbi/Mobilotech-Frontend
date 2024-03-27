@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import {RouterLink, RouterModule, RouterOutlet} from "@angular/router";
 import {SlideComponent} from "../slide/slide.component";
-import {CategoryComponent} from "../category/category.component";
+import {CategoryComponent} from "../../Categor/category/category.component";
 import {elementAt} from "rxjs";
 import {animate, state, style, transition, trigger} from "@angular/animations";
 import {FooterComponent} from "../footer/footer.component";
-import {ProductService} from "../product.service";
+import {ProductService} from "../../products/product.service";
 import {NgIf} from "@angular/common";
-import {ProductQuickviewComponent} from "../product-quickview/product-quickview.component";
+import {ProductQuickviewComponent} from "../../products/product-quickview/product-quickview.component";
 
 @Component({
   selector: 'app-home-page',

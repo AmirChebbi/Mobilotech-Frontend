@@ -6682,9 +6682,9 @@
       "type": "npm",
       "name": "npm:follow-redirects",
       "data": {
-        "version": "1.15.5",
+        "version": "1.15.6",
         "packageName": "follow-redirects",
-        "hash": "sha512-vSFWUON1B+yAw1VN4xMfxgn5fTUiaOzAJCKBwIIgT/+7CuGy9+r+5gITvP62j3RmaD5Ph65UaERdOSRGUzZtgw=="
+        "hash": "sha512-wWN62YITEaOpSK584EZXJafH1AGpO8RVgElfkuXbTOrPX4fIfOyEpW/CsiNd8JdYrAoOvafRTOEnvsO++qCqFA=="
       }
     },
     "npm:foreground-child": {
@@ -10845,13 +10845,13 @@
         "hash": "sha512-y51HrHaFeeWir0YO4f0g+9GwZawuigzcAdRNon6jErXy/SqV/+O6eaVAzDqE6t3e3NpGeR5CS+cCDaTC+V3yEQ=="
       }
     },
-    "npm:webpack-dev-middleware@5.3.3": {
+    "npm:webpack-dev-middleware@5.3.4": {
       "type": "npm",
-      "name": "npm:webpack-dev-middleware@5.3.3",
+      "name": "npm:webpack-dev-middleware@5.3.4",
       "data": {
-        "version": "5.3.3",
+        "version": "5.3.4",
         "packageName": "webpack-dev-middleware",
-        "hash": "sha512-hj5CYrY0bZLB+eTO+x/j67Pkrquiy7kWepMHmUMoPsmcUaeEnQJqFzHJOyxgWlq746/wUuA64p9ta34Kyb01pA=="
+        "hash": "sha512-BVdTqhhs+0IfoeAf7EoH5WE+exCmqGerHfDM0IL096Px60Tq2Mn9MAbnaGUe6HiMa41KMCYF19gyzZmBcq/o4Q=="
       }
     },
     "npm:webpack-dev-server": {
@@ -26306,7 +26306,7 @@
     },
     {
       "source": "npm:webpack-dev-server",
-      "target": "npm:webpack-dev-middleware@5.3.3",
+      "target": "npm:webpack-dev-middleware@5.3.4",
       "type": "static"
     },
     {
@@ -26315,32 +26315,32 @@
       "type": "static"
     },
     {
-      "source": "npm:webpack-dev-middleware@5.3.3",
+      "source": "npm:webpack-dev-middleware@5.3.4",
       "target": "npm:webpack",
       "type": "static"
     },
     {
-      "source": "npm:webpack-dev-middleware@5.3.3",
+      "source": "npm:webpack-dev-middleware@5.3.4",
       "target": "npm:colorette",
       "type": "static"
     },
     {
-      "source": "npm:webpack-dev-middleware@5.3.3",
+      "source": "npm:webpack-dev-middleware@5.3.4",
       "target": "npm:memfs",
       "type": "static"
     },
     {
-      "source": "npm:webpack-dev-middleware@5.3.3",
+      "source": "npm:webpack-dev-middleware@5.3.4",
       "target": "npm:mime-types",
       "type": "static"
     },
     {
-      "source": "npm:webpack-dev-middleware@5.3.3",
+      "source": "npm:webpack-dev-middleware@5.3.4",
       "target": "npm:range-parser",
       "type": "static"
     },
     {
-      "source": "npm:webpack-dev-middleware@5.3.3",
+      "source": "npm:webpack-dev-middleware@5.3.4",
       "target": "npm:schema-utils",
       "type": "static"
     },

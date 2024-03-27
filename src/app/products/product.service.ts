@@ -5,8 +5,6 @@ import { Injectable } from '@angular/core';
 })
 export class ProductService {
 
-
-
   private _isQuickViewd: boolean = false;
 
   private _isAuthenticated:boolean =false;
@@ -29,18 +27,17 @@ export class ProductService {
     this._isQuickViewd = value;
   }
 
-
   private _sideShoppingCart:boolean=false;
 
   setSideShoppingCart(value: boolean) {
     this._sideShoppingCart=value;
   }
+
   get sideShoppingCart(): boolean {
     return this._sideShoppingCart;
   }
 
   private _sideWishList:boolean=false
-
 
   get sideWishList(): boolean {
     return this._sideWishList;
@@ -49,4 +46,5 @@ export class ProductService {
   setSideWishList(value: boolean) {
     this._sideWishList = value;
   }
+
 }

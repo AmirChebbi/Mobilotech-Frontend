@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import {MenuComponent} from "../menu/menu.component";
 import {NgIf} from "@angular/common";
 import { trigger, state, style, animate, transition } from '@angular/animations';
-import {ProductService} from "../product.service";
-import {SideShoppingCartComponent} from "../side-shopping-cart/side-shopping-cart.component";
+import {ProductService} from "../products/product.service";
+import {SideShoppingCartComponent} from "../Shopping Cart/side-shopping-cart/side-shopping-cart.component";
 import {SideWishlistComponent} from "../side-wishlist/side-wishlist.component";
 
 @Component({

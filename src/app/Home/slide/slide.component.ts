@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {ProductDivisionComponent} from "../product-division/product-division.component";
+import {ProductDivisionComponent} from "../../products/product-division/product-division.component";
 import {NgForOf} from "@angular/common";
 
 @Component({

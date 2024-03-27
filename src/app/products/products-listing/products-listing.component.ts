@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import {CategoryComponent} from "../category/category.component";
+import {CategoryComponent} from "../../Categor/category/category.component";
 import {ProductDivisionComponent} from "../product-division/product-division.component";
-import {FooterComponent} from "../footer/footer.component";
+import {FooterComponent} from "../../Home/footer/footer.component";
 import {NgIf} from "@angular/common";
 import {ProductQuickviewComponent} from "../product-quickview/product-quickview.component";
 import {ProductService} from "../product.service";

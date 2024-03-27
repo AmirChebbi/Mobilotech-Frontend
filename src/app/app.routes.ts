@@ -1,14 +1,12 @@
 import { Routes } from '@angular/router';
-import {HomePageComponent} from "./home-page/home-page.component";
+import {HomePageComponent} from "./Home/home-page/home-page.component";
 import {PageNotFoundComponent} from "./page-not-found/page-not-found.component";
 import {ContactPageComponent} from "./contact-page/contact-page.component";
-import {AuthenticationPageComponent} from "./authentication-page/authentication-page.component";
-import {CategoryOverviewComponent} from "./category-overview/category-overview.component";
-import {ProductsListingComponent} from "./products-listing/products-listing.component";
-import {ProductDescriptionComponent} from "./product-description/product-description.component";
-import {ShoppingCartPageComponent} from "./shopping-cart-page/shopping-cart-page.component";
-import {LoginPageComponent} from "./login-page/login-page.component";
-import {SignupPageComponent} from "./signup-page/signup-page.component";
+import {AuthenticationPageComponent} from "./Authentication/authentication-page/authentication-page.component";
+import {CategoryOverviewComponent} from "./Categor/category-overview/category-overview.component";
+import {ProductsListingComponent} from "./products/products-listing/products-listing.component";
+import {ProductDescriptionComponent} from "./products/product-description/product-description.component";
+import {ShoppingCartPageComponent} from "./Shopping Cart/shopping-cart-page/shopping-cart-page.component";
 
 const routes: Routes = [
   {

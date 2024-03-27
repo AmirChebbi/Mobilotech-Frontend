@@ -34,5 +34,6 @@ export class SignupPageComponent implements OnInit{
       password: this.signUpForm.get('password')?.value,
       confirmPassword: this.signUpForm.get('confirmPassword')?.value
     }
+    this.jwtService.sendSignUpRequest(JSON.stringify(signUpData))
   }
 }
